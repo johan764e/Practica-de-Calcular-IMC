@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraiMC_JAPD.MainPage"
+             Title="Calculadora de IMC">
+
+    <VerticalStackLayout Padding="24" Spacing="14">
+
+        <Label Text="Calculadora de IMC"
+               FontSize="26"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="PesoEntry"
+               Placeholder="Peso (kg)"
+               Keyboard="Numeric" />
+
+        <Entry x:Name="AlturaEntry"
+               Placeholder="Estatura (cm)"
+               Keyboard="Numeric" />
+
+        <Button Text="Calcular"
+                Clicked="OnCalcularClicked" />
+
+        <Label x:Name="ResultadoLabel"
+               FontSize="22"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="MensajeLabel"
+               HorizontalTextAlignment="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
